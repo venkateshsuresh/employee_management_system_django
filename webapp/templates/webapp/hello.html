@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<title>Augmented Reality</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://apple.co/2MMwWLe");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="#home" class="w3-bar-item w3-button w3-wide"><b>AUGMENTED REALITY</b></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-large"><b>The Expert in anything was</b></span><br>
+    <span class="w3-large"><b>Once a Beginner</b></span>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
+  </div>
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</header>
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">ABOUT THE COMPANY</h3>
+  <p class="w3-center w3-large">Key features of our company</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Technology</p>
+      <p> Indian company that focuses on e-commerce, Augmented Reality, web development, cloud computing, digital streaming, and artificial intelligence.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Passion</p>
+      <p>With the help of advanced AR technologies the information about the surrounding real world of the user becomes interactive and digitally manipulated.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Design</p>
+      <p> Eyewear that employs cameras to intercept the real world view and re-display its augmented view through the eyepieces.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Applications</p>
+      <p>AR is used is several sectors like manufacturing industries, Assembling sectors,Handloom industries,
+Automobile industries,
+Maintenance unit,
+Rural education development,
+Customer satisfaction,
+Overall maintenance of a product,etc.,
+ </div>
+  </div>
+</div>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+      <h1><b>AUGMENTED REALITY BASED PRODUCT ASSEMBLY</b></h1>
+        <h3><b>Project Overview</b></h3>
+      <p align="justify">There is a huge market base in India for all kinds of industries. The revolution of Digital India gives us a great platform to incorporate emerging technologies in industries. In the current industrial trends, thousands of products are being manufactured and assembled every day. Consumer specific and customized products, as well as increased product complexity, set higher demands for assembly work. A typical assembly process involves grouping of individual parts to form a single unit. Pre-training is required for the operators before getting into the work. The recent articles of a leading newspaper in the country points out that nearly every type of assembling sector faces increasing regulations aimed at everything right from ensuring product safety to time and speed management.
+	 		Also, product preferences change so quickly that delays in assembling and production may be a death knell for the industry. Every new product right from manufacturing smartphones to heavy machinery equipment requires a different set of assembling instructions. Additional trainers for operators increase labour cost. There is a shortage of skilled operators and a lack of knowledge about the assembly line process due to which the companies experience unnecessary buffers that negatively impact the bottom line.
+			“The Indian Institute of Welding has estimated a short supply of 1.2 million welding professionals”. Not only welding but also there is a lack of many other professional workers in the assembly sector.  Every industry expects to see rapid growth and value addition. Update, work speed, and time consumption are the 3 most pre-dominant key factors in the industrial market that help the industries achieve their goal. Many manufacturing companies are developing robust training programs to teach their candidates right from welding to complex assembly-line process.
+			 Nearly 4.6 million jobs will become available over the next decade and nearly 2.4 million are expected to go unfilled. Today 6 out of 10 open skilled assembling and production positions are unfilled. While automation and robotics may help to fill the labour gap, skilled manual workers will still be needed in the assembling process, perform analysis and manage production.
+			 The main objective of the solution is to reduce the complexity of assembly work by developing a wearable device using Augmented Reality technology that can overcome the above-stated challenge faced by industries in the present scenario, where time and speed of the work plays a significant role. AR can help by overlaying audio-visual 3-D model procedural instructions and contextual information generated with graphics, text, and sound directly over the image target for assembling a product that strikes out the need of an expert in the assembly unit.  From the study analysis and evaluation of existing solutions, all the information is in the form of 2-D contents and smart glasses subjects for a huge cost.
+      </p>
+      <h3><b>Introduction</b></h3>
+      <p align="justify">The assembly phase is an important process during the product development cycle. Currently, manual operation is still the main style for some non-automated or semi-automated production lines even in the era of Industry 4.0. Assembly operations usually are carried out in many steps defined by process engineer in an assembly manual, where each step involves different assembly objects, tools and quality requirements that should be paid attention. Manual assembly performed by human workers results in the diversity of assembly time, quality, and cost. In the mass custom production condition, the frequently changed product and their assembly process require that the skilled and qualified workers should keep in mind all the trivial process when they assembly the product. The assembly error will turn up higher because of the heavy cognitive load.
+			Traditionally, PAM is used in industries with extensive text and guiding pictures. The text and 2D diagrams are difficult to understand the complex assembly relations, which results in a long time for training and execution. The 3D virtual reality assembly manual has also been the main method to assistant the assembly works. The VAM can provide dynamic and visual assembly instruction to workers and aid the understanding of the spatial relationship, sequence, and path during the assembling process. But the VAM separates the real assembly work environments from the virtual information, which require the attention transfer between virtual and real assembly environment. In the era of Industry 4.0, more and more work support systems will be provided to assistant workers. Augmented reality applications in product assembly can notably improve the operation efficiency of shop floor workers in training or onsite work. The assembly manual system based on augmented reality technology is more complex than manuals in and virtual three-dimensional manual. This research work introduces a general two stages procedure for application of augmented assembly manual system.
+			The relationship of assembly activities is described and the IDEF0 function diagram for augmented assembly application is presented. A detailed system framework for augmented assembly manual application is proposed and two stand-alone experimental systems with file transfer mechanisms are developed to instruct and assistant labours in assembly work at shop floor workstations.
+      </p>
+      <h3><b>Summary</b></h3>
+      <p align="justify">  Assembly with AR is categorized as an application that helps the user with their daily problem. It serves purely for helping the user to assembly an object in a more entertaining way. By implementing an augmented reality method, the application delivers the assembly instruction in a different way which is more entertaining and gives a piece of clearer information about the instruction. The augmented Reality method also offers the user to view the 3D model from different perspectives by moving around the 3D model. Because the 3D model keeps its position and orientation based on the image target. Since Assembly with AR is developed to be runnable on Android devices, it is also categorized as a mobile application that is more flexible rather than using quite big hardware that sometimes difficult to operate. The advantage of this application is its convenience. By using a mobile device, we can use the application everywhere and anywhere. A mobile device is portable and can be carried anywhere. This means that as long as the users have their mobile devices on their hands, they can use the application wherever they are.
+</p>
+      <h3><b>Working Principle and Methodology</b></h3>
+      <p align="justify">  Augmented Reality uses existing reality and physical objects to trigger computer-generated enhancements over the top of reality, in the real image on a user’s view of the real world, thus providing a composite view. These images can be of 3D models, videos and information. The goal of AR is to create a system in which the user cannot differentiate the real world and virtual augmentation of it.
+	AR adds digital elements onto a smartphone camera, creating an illusion that holographic content is a part of the physical world around you. In contrast with VR, you are not immersed in the whole artificial environment. AR alters the surroundings a bit by adding 3D objects, sounds, videos, graphics to it. To show the relevant content to the user AR uses computer vision, simultaneous localization, mapping and depth tracking. This allows cameras to collect, send and process data to show digital content relevant to what the user is looking at.
+	The whole process of computer seeing real world includes the machine representing colours by numbers, identifying a similar group of colours and then segmenting the image, searching for lines that meet at object angles and covering a specific part of the image, finding textures, and matching the image with those present in the database. Fig 3.1, shows the general requirements.
+	Augmented reality requires discerning objects around the user in terms of both semantics and 3D geometry. Semantics recognizes the object, while geometry figures out where the object is placed.
+</p>
+       <h3><b>Software Description</b></h3>
+      <p align="justify">  Maya is a 3-D computer animation, modelling, simulation, and rendering software. It is developed by Autodesk that enables the creation of high professional three-dimensional structures of objects. In the proposed solution, the use of Maya has resulted in the creation of the replica of the industrial product parts and individual components of the machinery product in 3D with greater precision. The developed 3D models are imported in the Unity 3D gaming engine software. This approach applies to any other parts 3D model’s equipment.
+Using the Autodesk Maya 3D software tool, the models are developed and imported in unity for transformations. The application consists of several object’s assembly instructions which have a different kind of components.  Each assembly instruction has several steps that have an animation applied to the 3D model which is created using Maya.
+</p>
+      <h3><b>UNITY</b></h3>
+      <p align="justify"> The main part of AR is carried in Unity 3D. Unity 3D engine is the popular development platform for creating 2D and 3D, augmented reality multiplatform interactive experiences. Unity engine integrated with MAYA 3D is used here. Using C# code, the animation and simulation are done in unity. This application developed is intended for android users. This project is Marker-based Augmented Reality. It is a powerful cross-platform 3D engine and also a user-friendly environment. It is used to create applications for mobile, desktop, and web.
+In our solution, unity software is used to develop the marker-based smart AR application which can be viewed with the help of the smart glass designed. The application aims at delivering visual information features, function and operation are effectively defined. </p>
+      <h3><b>Vuforia</b></h3>
+      <p align="justify"> It is a software development kit (SDK)  specially used for AR. It is used in devices that enable the creation of AR applications. The mosaicking and fusion of common parts of the different images support us for locating and placing the degree of the viewpoint of virtual object models created in 3-D and synthetic images which gives the real view similar to the real-world environment when viewed through a mobile camera. The continuous tracking of virtual objects helps us to match the location and viewpoint angle if the image is very realistic. The 3-D virtual object looks very real in the viewer's perspective and changes to the closeness of the vision for the target object present in the 3-D environment for providing real-world experience. Vuforia 3-D engine is a platform for creating Augmented Reality applications. It allows to recognize image target and enables to interact with spaces in the real world. This software uses the capabilities of the computer vision technology to recognize and make the individual tracking of the objects captured by the camera in real-time. Vuforia capable to do image registration which offers the developers to change the position and the orientation of the virtual object in the space, mainly 3D objects or another type of media, concerning the real-life environment or video when these are viewed through the smartphone’s camera. The virtual object or objects appears as if from another real live environment object. The Vuforia SDK supports different types of targets, both two-dimensional and three-dimensional, including multi-target configurations, user-defined image targets and frame markers.
+          The SDK also provides another additional feature such as localized occlusion detections using virtual buttons, image target selection in real-time and the ability to reconfigure and create target sets depending on the scenario. There are three main components to the Vuforia platform: The Vuforia Engine is the client-side library that is statically linked to the app. This is available through the client SDK and supports Android and iOS.  Tools Vuforia provides tools for creating the target marker, managing the target database and securing the licenses of the application.
+      </p>
+      <h3><b>Hardware</b></h3>
+      <p align="justify"> The phone is fixed in the cardboard set-up and the AR application will render 3-D audio-aided augmented assembly step-by-step procedure of an industrial product or any other complex machinery which is to be viewed through glass. The glass consists of a +8 focal lens made of polycarbonate and a plane mirror inclined at a fixed angle (600). The fixture for the mobile phone is provided. The inertial sensors, camera, microcontroller on the phone are also utilized here. The requirements for AR are given below.
+</p>
+      <h3><b>Innovativeness of the Solution</b></h3>
+      <p align="justify"> The technology in the proposed solution is AR. Augmented Reality is the integration of virtual objects into the real world. AR helps the user to be in touch with the real and virtual world at the same time. AR gives information about the surrounding real world. It requires no internet connection. Thus, providing an interactive and digitally usable environment. It also uses AI for image recognition. Our target is to develop an AR glass that is cost-effective and economical such that all the industries who strive for quality and accuracy are benefitted. “A Digital Economy should mould the workers and work, not wipe them out.” It is the motto of our product.
+</p>
+      <h3><b>Uniqueness</b></h3>
+      <p align="justify"> The whole procedural instructions to do the assembly process are visually presented in front of the assembly operators and technicians.
+The worker can clearly understand the procedures of how to assemble the individual parts to obtain a final product as they can view it in 3-D model augmented scenes in the real world with a virtual touch which gives them immersive experience aided with audio.
+The main advantage is that there is no language constraint, the user can listen to the procedures in their language and no internet requirement. Increase the speed and efficiency of the work while reducing the time.
+</p>
+      <h3><b>Future Enhancehent</b></h3>
+      <p align="justify">The product can be further enhanced by integrating AR with IoT “ARoT” technology. It also helps the industry to have a database of how efficient the workers are working. Integrating AR with IoT will help the workers to rectify the errors encountered during the work. In the Indian industrial market, product complexity sets higher demands for an assembly where “AR+IoT=ARoT” is applied to increase assembly efficiency, speed and accuracy Notification of how much work has been completed on a particular day can be sent to the production unit head then and there. This makes the work of the manager easy.
+</p>
+      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">THE TEAM</h3>
+  <p class="w3-center w3-large">The ones who runs this company</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://bit.ly/2MRnWEw" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>Siva Raam</h3>
+          <p class="w3-opacity">AR Developer</p>
+          <p>Passionate towards AR.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://bit.ly/2UyekmD" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Sree Dhivya</h3>
+          <p class="w3-opacity">Reasearcher</p>
+          <p>Predicting the upcoming Technologies.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://bit.ly/3e0y4ag" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Venkatesh</h3>
+          <p class="w3-opacity">Web Designer</p>
+          <p>Passionate towards Web development.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://bit.ly/2MQoZ7K" alt="Dan" style="width:100%">
+        <div class="w3-container">
+          <h3>Varshini Meenakshi</h3>
+          <p class="w3-opacity">Data Analyst</p>
+          <p>Aanalysing the Future Market.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">14+</span>
+    <br>Partners
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">55+</span>
+    <br>Projects Done
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">89+</span>
+    <br>Happy Clients
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">150+</span>
+    <br>Meetings
+  </div>
+</div>
+
+<!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">OUR WORK</h3>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="https://bit.ly/37qBcJN" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="ROBOTIC ARM">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://bit.ly/3dViegW" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="MAYA ANIMATION">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://bit.ly/2BZyyiH" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="UNITY FOR ACTIONS">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://bit.ly/3dViegW" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="MAYA WIREFRAME">
+    </div>
+  </div>
+
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Skills Section -->
+<div class="w3-container w3-light-grey w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Our Skills.</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+      tempor incididunt ut labore et dolore.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+      tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-col m6">
+      <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>AR APP DEVELOPMENT</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Web Design</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>RESEARCH</p>
+      <div class="w3-grey">
+        </div>
+      <div class="w3-container w3-dark-grey w3-center" style="width:95%">95%</div>
+      <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>ANALYST</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Koyampuththoor, India</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: 9500663992</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: blackclover@gmail.com</p>
+    <br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+    <!-- Image of location/map -->
+    <img src="https://www.w3schools.com/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  </footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
